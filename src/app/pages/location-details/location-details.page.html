@@ -4,6 +4,13 @@
     <ion-buttons slot="start">
       <ion-back-button [text]="'Search'" defaultHref="/search"></ion-back-button>
     </ion-buttons>
+    <ion-badge
+      class="ion-margin-end"
+      slot="end"
+      *ngIf="average$ | async"
+      color="{{ averageStatus === 'Bad' ? 'danger' : averageStatus === 'Average' ? 'warning'  : 'success' }}">
+      {{ averageStatus }}
+    </ion-badge>
   </ion-toolbar>
 </ion-header>
 
