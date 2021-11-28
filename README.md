@@ -27,6 +27,6 @@ The application is complete and production ready with few limitations including 
 3. Run `ionic capacitor add ios/android`
 4. Run `ionic capacitor run ios/android`
 
-### Remaerks
+### Remarks
 1. Please note that the 3D Model will not work in web browser mode as it requires native device orientation api
 2. You would need to have an ionic 5 version installed globally on your system
